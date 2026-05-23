@@ -5,7 +5,7 @@
 
 ---
 
-## 👥 Nhóm thực hiện
+## Nhóm thực hiện
 
 | Họ tên | MSSV | Phụ trách |
 |---|---|---|
@@ -14,11 +14,11 @@
 | Võ Văn Truyền Vũ | 3122480080 | Phân tích đơn biến |
 | Lê Tấn Nhật Minh | 3122480032 | Xác định tính chất dữ liệu |
 
-**Giảng viên hướng dẫn:** ThS. Đỗ Như Tài
+**Giảng viên hướng dẫn:** TS. Đỗ Như Tài
 
 ---
 
-## 📌 Tổng quan dự án
+## Tổng quan dự án
 
 Dự án xây dựng hệ thống phân loại tự động các bài hát vào **11 thể loại âm nhạc** (Class 0–10) dựa trên các đặc trưng vật lý của sóng âm. Việc tự động hóa gán nhãn thể loại là nền tảng cho các hệ thống gợi ý nhạc (Recommendation Systems) trên các nền tảng phát nhạc trực tuyến.
 
@@ -30,7 +30,7 @@ Dự án xây dựng hệ thống phân loại tự động các bài hát vào 
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Thông số | Giá trị |
 |---|---|
@@ -56,7 +56,7 @@ Class 3   ██                             322  ( 2.2%)  ← Classical / Symph
 Class 4   ██                             310  ( 2.2%)  ← Country / Live Folk
 ```
 
-> ⚠️ Chênh lệch **12.8×** giữa Class 10 và Class 4 — cần chiến lược xử lý mất cân bằng.
+>  Chênh lệch **12.8×** giữa Class 10 và Class 4 — cần chiến lược xử lý mất cân bằng.
 
 ### Các features sử dụng
 
@@ -79,7 +79,7 @@ Class 4   ██                             310  ( 2.2%)  ← Country / Live Fo
 
 ---
 
-## 🔍 Phân tích dữ liệu
+## Phân tích dữ liệu
 
 ### Missing Values
 
@@ -115,7 +115,7 @@ liveness          ████████               7.1%
 tempo             ███                    2.0%
 ```
 
-> 💡 Chỉ cần 11 features đầu để giải thích **90%** khả năng ra quyết định của mô hình.
+> Chỉ cần 11 features đầu để giải thích **90%** khả năng ra quyết định của mô hình.
 
 ### Tương quan nổi bật
 
@@ -128,7 +128,7 @@ tempo             ███                    2.0%
 
 ---
 
-## ⚙️ Tiền xử lý dữ liệu
+## Tiền xử lý dữ liệu
 
 ### Pipeline xử lý tập Train
 
@@ -178,7 +178,7 @@ tempo             ███                    2.0%
 
 ---
 
-## 🤖 Mô hình
+## Mô hình
 
 ### 1. Random Forest (Bagging)
 
@@ -250,7 +250,7 @@ Kiến trúc 2 tầng: Random Forest (Bagging) + XGBoost (Boosting) làm base mo
 
 ---
 
-## 🏆 Kết quả Kaggle
+## Kết quả Kaggle
 
 | Submission | Public Score | Private Score | Chênh lệch |
 |---|---|---|---|
@@ -269,7 +269,7 @@ Kiến trúc 2 tầng: Random Forest (Bagging) + XGBoost (Boosting) làm base mo
 
 ---
 
-## 📁 Cấu trúc project
+## Cấu trúc project
 
 ```
 ├── Data/
@@ -295,7 +295,7 @@ Kiến trúc 2 tầng: Random Forest (Bagging) + XGBoost (Boosting) làm base mo
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange?logo=scikit-learn)
@@ -308,7 +308,7 @@ Kiến trúc 2 tầng: Random Forest (Bagging) + XGBoost (Boosting) làm base mo
 
 ---
 
-## 📝 Kết luận
+## Kết luận
 
 1. **Random Forest là mô hình tốt nhất** cho bài toán này — private score 0.4648, ổn định nhất giữa public và private set
 2. **Acousticness, speechiness và energy** là 3 features quan trọng nhất để phân loại thể loại nhạc
